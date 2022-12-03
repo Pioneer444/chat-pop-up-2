@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chat.css">
+    <title>chat popup</title>
+</head>
+
+<body>
+
+    <a href="#"><img class="open-msg" onclick="openForm()" src="img/chat.png" alt=""></a>
+
+    <div class="chat-popup" id="myForm">
+        <div class="first">
+            <div class="exit">
+                <a href="#"> <img src="img/delete.png" class="exit-x" alt="" onclick="exit()"></a>
+            </div>
+            <div class="MBPages">
+                <div id="page1" class="page1">
+                    <div class="top">
+                        <img src="img/msj.png" alt="" width="60">
+                        <h2>Elementor</h2>
+                        <span>Here to help!</span>
+
+                    </div>
+                    <div class="middle">
+                        <img src="img/sohbet.svg" alt="">
+                        <h2>Henüz görüşmeniz yok</h2>
+                        <span>Bir sorunuz mu var? Yardım almak için yeni bir görüşme <br> başlatın.</span>
+                        <button onclick="nextPage()">Yeni Görüşme</button>
+                    </div>
+                </div>
+                <div id="page2" class="page2">
+                    <div class="page2content">
+                        <div class="tr2">
+                            <div class="kutu">
+                            <a href="#"><img src="img/left.png" alt=""></button></a>
+                            <img src="img/tt..png" width="45px" alt=""> 
+                            <span>EVA</span>
+                            </div>
+                            <div class="exit" style="margin-top: -20px;" >
+                                <a href="#"> <img src="img/delete.png" class="exit-x" alt="" onclick="exit()"></a>
+                            </div>
+                        </div>
+                        <div class="ımeva-img">
+                            <div class="görsel">
+                                <img src="img/tt..png" alt="">
+                            </div>
+                            <div class="ımeva">
+                            <div class="text-span">
+                                <p>Hi! <br> I'm EVA, your Elementor Virtual Assistant. I'm a robot ﻿🤖﻿ and my job is to direct you to the person that can help you the most, depending on your issue.</p>
+                                <p>Please enter your email address so we can follow up with you later.</p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <div class="lower"></div>
+        </div>
+
+
+    </div>
+
+
+
+    <script>
+
+        function nextPage() {
+            document.getElementById("page1").style.display = "none";
+            document.getElementById("page2").style.display = "block";
+
+        }
+        function prevPage(){
+
+        }
+        
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+
+        function exit() {
+            document.getElementById("myForm").style.display = "none";
+        }
+
+
+
+    </script>
+</body>
+
+</html>
